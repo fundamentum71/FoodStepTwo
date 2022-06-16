@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	//! TIMER
-	const deadline = '2022-07-15';
+	const deadline = '2022-09-1';
 
 	function getTimeRemaining(endtime) {
 		let days, hours, minutes, seconds;
