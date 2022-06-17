@@ -978,6 +978,7 @@ a {
     margin-right: auto;
   }
   .header {
+    padding-bottom: 300px;
     max-width: 300px;
     display: block;
     margin: 0 auto;
@@ -999,50 +1000,82 @@ a {
     margin: 0 auto;
     margin-bottom: 20px;
   }
+  .header__links a {
+    width: 200px;
+  }
   .header__link {
     display: block;
     margin: 0 auto;
+  }
+  .header__link:after {
+    bottom: 3px;
   }
   .header__logo {
     display: block;
     margin: 0 auto;
   }
-  .preview {
-    padding-top: 200px;
+  .preview .bgc_blue {
+    top: -300px;
   }
   .preview .tabcontainer {
     width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    z-index: 20;
   }
-  .preview .tabheader {
-    width: 90%;
-  }
-  .preview .tabcontent__descr {
+  .preview .tabcontainer .tabcontent__descr {
     position: relative;
     right: 0;
     top: 0;
     left: 0;
     bottom: 0;
+    text-indent: 30px;
+    width: 100%;
+  }
+  .preview .tabheader {
+    width: 100%;
   }
   .divider {
     width: 90%;
   }
   .offer .container {
-    max-width: 260px;
+    max-width: 100%;
   }
   .offer .title {
     text-align: center;
     text-indent: 0;
     font-size: 23px;
   }
+  .offer__descr {
+    text-align: justify;
+  }
   .offer__advantages h2 {
     text-indent: 0;
     text-align: center;
   }
   .offer__advantages-text {
+    text-align: justify;
     margin-bottom: 50px;
   }
   .offer__slide {
     height: 210px;
+  }
+  .offer__slider .carousel-indicators {
+    bottom: 0;
+  }
+  .offer .bgc_y {
+    left: -10px;
+    width: calc(100% + 20px);
+  }
+  .calculating #gender:after {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 43%;
+    transform: rotate(90deg);
+  }
+  .calculating .container {
+    width: 90%;
   }
   .calculating .calculating__choose-item {
     width: 280px;
@@ -1068,12 +1101,18 @@ a {
   .calculating__result {
     text-align: center;
   }
+  .calculating__choose-item_active {
+    background: rgba(60, 190, 255, 0.8);
+  }
   .menu .container {
     width: 100%;
   }
   .menu__item {
     width: 90%;
     margin: 30px auto;
+  }
+  .order .container {
+    width: 90%;
   }
   .order__form {
     padding: 0 20px;
@@ -1086,30 +1125,46 @@ a {
     width: 90%;
     margin: 30px auto;
   }
+  .promotion__descr {
+    text-align: justify;
+    text-indent: 30px;
+  }
   .promotion__timer .timer__block {
     font-size: 14px;
-    width: 50px;
+    width: 60px;
     height: 100px;
   }
   .promotion__timer .timer__block span {
-    font-size: 30px;
+    font-size: 40px;
+  }
+  .footer .container {
+    padding: 0 15px;
   }
   .footer .subtitle {
-    font-size: 14px;
+    font-size: 13px;
   }
   .footer .link {
-    font-size: 20px;
+    font-size: 14px;
   }
   .modal__dialog {
-    max-width: 300px;
+    max-width: 80%;
+    margin: 100px auto;
+  }
+  .modal__content {
+    max-height: 100vh;
+    height: 350px;
+    padding-top: 50px;
   }
   .modal__title {
     font-size: 16px;
+    margin-bottom: 30px;
   }
   .modal__input {
     width: 220px;
+    font-size: 14px;
   }
   .modal .btn {
     width: 220px;
+    font-size: 16px;
   }
 }
